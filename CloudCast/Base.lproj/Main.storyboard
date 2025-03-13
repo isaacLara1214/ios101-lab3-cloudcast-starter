@@ -1,8 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UdD-hc-yaY">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Forecast View Controller-->
+        <scene sceneID="CWa-z2-pcp">
+            <objects>
+                <viewController id="UdD-hc-yaY" customClass="ForecastViewController" customModule="CloudCast" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fur-Cu-oHG">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Atlanta, GA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8C9-cI-zPp">
+                                <rect key="frame" x="136.66666666666666" y="79" width="119.99999999999997" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="place-marker" translatesAutoresizingMaskIntoConstraints="NO" id="GOZ-tk-wHG">
+                                <rect key="frame" x="104.66666666666667" y="79" width="30.000000000000014" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4am-eS-vf8"/>
+                                    <constraint firstAttribute="width" constant="30" id="AE1-qm-nlD"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="73" translatesAutoresizingMaskIntoConstraints="NO" id="9FH-FF-Kze">
+                                <rect key="frame" x="109" y="184" width="175" height="455"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="March 6, 2024" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Kb-W7-c3y">
+                                        <rect key="frame" x="0.0" y="0.0" width="111.33333333333333" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud-fog-moon" translatesAutoresizingMaskIntoConstraints="NO" id="eYP-BS-qy3">
+                                        <rect key="frame" x="0.0" y="93.333333333333314" width="175" height="175"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="175" id="ARP-FV-g50"/>
+                                            <constraint firstAttribute="width" constant="175" id="fJq-1t-0tu"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="175" id="ibi-X5-oTD"/>
+                                            <constraint firstAttribute="height" constant="175" id="rDj-01-zKp"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cloudy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3g-eP-Ymg">
+                                        <rect key="frame" x="0.0" y="341.33333333333337" width="53.666666666666664" height="20.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="42°F" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNY-Xl-p3z">
+                                        <rect key="frame" x="0.0" y="434.66666666666663" width="37.333333333333336" height="20.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="spQ-xw-PJf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9FH-FF-Kze" firstAttribute="top" secondItem="8C9-cI-zPp" secondAttribute="bottom" constant="75" id="6Xm-B9-EPk"/>
+                            <constraint firstItem="8C9-cI-zPp" firstAttribute="top" secondItem="spQ-xw-PJf" secondAttribute="top" constant="20" id="X4F-cP-7Hj"/>
+                            <constraint firstItem="GOZ-tk-wHG" firstAttribute="top" secondItem="spQ-xw-PJf" secondAttribute="top" constant="20" id="g0v-4x-161"/>
+                            <constraint firstItem="9FH-FF-Kze" firstAttribute="centerX" secondItem="fur-Cu-oHG" secondAttribute="centerX" id="hlo-DL-U3S"/>
+                            <constraint firstItem="8C9-cI-zPp" firstAttribute="leading" secondItem="GOZ-tk-wHG" secondAttribute="trailing" constant="2" id="nHv-3a-rvt"/>
+                            <constraint firstItem="8C9-cI-zPp" firstAttribute="centerX" secondItem="fur-Cu-oHG" secondAttribute="centerX" id="xCJ-yH-nZ2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="3Kb-W7-c3y" id="EbZ-YV-uPx"/>
+                        <outlet property="discriptionLabel" destination="y3g-eP-Ymg" id="8NL-X1-pTX"/>
+                        <outlet property="forcastImageView" destination="eYP-BS-qy3" id="hC2-Zp-NMh"/>
+                        <outlet property="locationLabel" destination="8C9-cI-zPp" id="BuH-da-VQ2"/>
+                        <outlet property="temperatureLabel" destination="nNY-Xl-p3z" id="KvS-SZ-1Uw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XmX-La-Uhs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-274.04580152671753" y="-28.169014084507044"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cloud-fog-moon" width="91" height="91"/>
+        <image name="place-marker" width="64" height="64"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

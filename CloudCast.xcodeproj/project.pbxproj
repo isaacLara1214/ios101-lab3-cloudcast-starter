@@ -15,6 +15,8 @@
 		997BF60229D4838E0099F2B4 /* CloudCastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997BF60129D4838E0099F2B4 /* CloudCastTests.swift */; };
 		997BF60C29D4838E0099F2B4 /* CloudCastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997BF60B29D4838E0099F2B4 /* CloudCastUITests.swift */; };
 		997BF60E29D4838E0099F2B4 /* CloudCastUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997BF60D29D4838E0099F2B4 /* CloudCastUITestsLaunchTests.swift */; };
+		F417036A2D7A8CCE000CA1BA /* ForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41703692D7A8CCE000CA1BA /* ForecastViewController.swift */; };
+		F417036C2D7A946E000CA1BA /* WeatherForcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = F417036B2D7A946E000CA1BA /* WeatherForcast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		997BF60729D4838E0099F2B4 /* CloudCastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudCastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		997BF60B29D4838E0099F2B4 /* CloudCastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudCastUITests.swift; sourceTree = "<group>"; };
 		997BF60D29D4838E0099F2B4 /* CloudCastUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudCastUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F41703692D7A8CCE000CA1BA /* ForecastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ForecastViewController.swift; path = CloudCast/ForecastViewController.swift; sourceTree = "<group>"; };
+		F417036B2D7A946E000CA1BA /* WeatherForcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherForcast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 		997BF5DE29D4838D0099F2B4 = {
 			isa = PBXGroup;
 			children = (
+				F41703692D7A8CCE000CA1BA /* ForecastViewController.swift */,
+				F417036B2D7A946E000CA1BA /* WeatherForcast.swift */,
 				997BF5E929D4838D0099F2B4 /* CloudCast */,
 				997BF60029D4838E0099F2B4 /* CloudCastTests */,
 				997BF60A29D4838E0099F2B4 /* CloudCastUITests */,
@@ -256,7 +262,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				997BF5EB29D4838D0099F2B4 /* AppDelegate.swift in Sources */,
+				F417036C2D7A946E000CA1BA /* WeatherForcast.swift in Sources */,
 				997BF5ED29D4838D0099F2B4 /* SceneDelegate.swift in Sources */,
+				F417036A2D7A8CCE000CA1BA /* ForecastViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +441,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T29V2RDDRE;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CloudCast/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -445,7 +454,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = CodePath.CloudCast;
+				PRODUCT_BUNDLE_IDENTIFIER = com.isaac.lara;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -460,6 +469,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T29V2RDDRE;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CloudCast/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -472,7 +482,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = CodePath.CloudCast;
+				PRODUCT_BUNDLE_IDENTIFIER = com.isaac.lara;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
